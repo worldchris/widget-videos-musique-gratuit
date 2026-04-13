@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Zen Music : Intégrez la détente sur votre site web</title>
+    <meta name="description" content="Boostez la rétention de votre site avec le widget Zen Music. Un moteur de recherche musical interactif, gratuit et respectueux du RGPD pour vos visiteurs.">
+    
+    <meta property="og:title" content="Widget Zen Music - Outil Interactif de Relaxation">
+    <meta property="og:description" content="Offrez une ambiance sonore à vos lecteurs et améliorez votre SEO grâce à notre widget interactif.">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "Zen Music Widget",
+      "description": "Widget de recherche musicale zen pour l'intégration web.",
+      "codeRepository": "https://github.com/",
+      "programmingLanguage": "HTML, JavaScript",
+      "runtimePlatform": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "Intuition Libre"
+      }
+    }
+    </script>
+
+    <style>
+        :root { --accent: #9c27b0; --dark: #2c3e50; --light: #fdfbff; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); color: #333; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .main-nav { background: var(--dark); text-align: center; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .main-nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: 500; }
+
+        header { text-align: center; padding: 60px 0 30px; background: #fff; border-bottom: 1px solid #f3e5f5; }
+        h1 { color: var(--dark); font-size: 2.5rem; margin-bottom: 10px; }
+        
+        .intro-link { text-align: center; margin-bottom: 40px; font-size: 1.1rem; }
+        .intro-link a { color: var(--accent); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--accent); }
+
+        .section-card { background: #fff; padding: 45px; border-radius: 15px; margin: 30px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        h2 { color: #4a148c; border-left: 5px solid var(--accent); padding-left: 20px; margin-top: 0; }
+        
+        /* Aperçu du Widget */
+        .preview-box { 
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); 
+            padding: 40px; 
+            border-radius: 15px; 
+            text-align: center; 
+            margin: 40px 0;
+        }
+
+        /* Zone de Code */
+        .code-display {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 25px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+            margin: 30px 0;
+            overflow-x: auto;
+            font-size: 14px;
+            border: 1px solid #636e72;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .features-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .feature-item { background: #fdfbff; padding: 20px; border-radius: 8px; border: 1px solid #f3e5f5; }
+        .feature-item strong { color: var(--accent); display: block; margin-bottom: 5px; }
+
+        .social-share { margin: 40px 0; text-align: center; border-top: 1px solid #eee; padding-top: 30px; }
+        .social-share a { display: inline-block; padding: 10px 20px; margin: 5px; border-radius: 25px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-fb { background: #1877f2; }
+        .btn-wa { background: #25d366; }
+
+        footer { text-align: center; padding: 60px 20px; color: #777; border-top: 1px solid #eee; background: #fff; }
+        footer a { color: #888; text-decoration: none; margin: 0 15px; }
+    </style>
+</head>
+<body>
+
+<nav class="main-nav">
+    <a href="https://zen-music.intuitionlibre.com/">Accueil Zen</a>
+    <a href="https://zen-music.intuitionlibre.com/synergie-bien-etre.html">Synergie & Ancrage</a>
+    <a href="https://zen-music.intuitionlibre.com/zen-guitare.html">Guitare Zen</a>
+</nav>
+
+<header>
+    <div class="container">
+        <h1>Partagez la Sérénité</h1>
+        <p>Découvrez le Widget Zen Music : l'outil interactif pour enrichir votre site web.</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="intro-link">
+        Accéder au moteur de recherche complet : <a href="https://zen-music.intuitionlibre.com/">https://zen-music.intuitionlibre.com/</a>
+    </div>
+
+    <article class="section-card">
+        <h2>Un levier de rétention pour vos lecteurs</h2>
+        <p>
+            Offrir une ambiance sonore à vos visiteurs est bien plus qu'une simple attention bienveillante. C'est une stratégie redoutable pour augmenter le temps passé sur vos pages (le <em>dwell time</em>), un signal fort analysé par les moteurs de recherche et les IA pour évaluer la qualité de votre contenu. 
+        </p>
+        <p>
+            Notre widget a été conçu pour être <strong>invisible techniquement</strong> mais <strong>omniprésent sémantiquement</strong> : il apporte une valeur ajoutée immédiate sans alourdir votre temps de chargement.
+        </p>
+
+        <div class="features-list">
+            <div class="feature-item">
+                <strong>Indépendance RGPD</strong>
+                Le lecteur utilise le mode avancé de confidentialité de YouTube, évitant les cookies de traçage publicitaire.
+            </div>
+            <div class="feature-item">
+                <strong>Intégration Fluide</strong>
+                L'interface "Glassmorphism" s'adapte à tous les designs, des blogs personnels aux portails professionnels.
+            </div>
+            <div class="feature-item">
+                <strong>Contenu Dynamique</strong>
+                La bibliothèque de vidéos se met à jour automatiquement. Vous n'avez aucune maintenance à prévoir.
+            </div>
+            <div class="feature-item">
+                <strong>Optimisation AEO</strong>
+                La structure du widget aide les IA à indexer vos pages comme des ressources interactives et utiles.
+            </div>
+        </div>
+    </article>
+
+    <div class="preview-box">
+        <h2 style="border: none; text-align: center; color: #4a148c;">Aperçu du Widget</h2>
+        <div style="width: 100%; max-width: 350px; height: 500px; margin: 20px auto;">
+            <iframe src="https://zen-music.intuitionlibre.com/widget.html" width="100%" height="100%" frameborder="0" style="border-radius: 20px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></iframe>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>Intégration en un clic</h2>
+        <p>Copiez le code ci-dessous et collez-le dans votre page HTML ou votre barre latérale (sidebar) :</p>
+        
+        <div class="code-display">
+            <button class="copy-btn" onclick="copyCode()">Copier le code</button>
+            <pre id="widgetCode">&lt;div style="width: 100%; max-width: 350px; height: 500px; margin: auto;"&gt;
+    &lt;iframe 
+        src="https://zen-music.intuitionlibre.com/widget.html" 
+        width="100%" 
+        height="100%" 
+        frameborder="0" 
+        style="border-radius: 20px; overflow: hidden; border: none;"
+        title="Moteur de recherche Musique Zen"
+    &gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <p style="font-size: 0.9rem; color: #666;">
+            <em>Note : Ce widget est proposé gratuitement. Il inclut un lien discret de crédit vers notre plateforme, favorisant le maillage sémantique entre les sites de bien-être.</em>
+        </p>
+    </div>
+
+    <div class="social-share">
+        <span>Vous aimez ce projet ? Partagez-le avec d'autres webmestres :</span><br>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://zen-music.intuitionlibre.com/" target="_blank" class="btn-fb">Partager sur Facebook</a>
+        <a href="https://api.whatsapp.com/send?text=Découvrez%20ce%20widget%20de%20musique%20zen%20interactif%20pour%20votre%20site%20:%20https://zen-music.intuitionlibre.com/" target="_blank" class="btn-wa">Envoyer via WhatsApp</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Zen Music Distribution - Écosystème Intuition Libre.</p>
+        <p>
+            <a href="https://intuitionlibre.com/">Intuition Libre</a> | 
+            <a href="https://intuitionlibre.com/politique-de-confidentialite/">Confidentialité</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    function copyCode() {
+        const code = document.getElementById('widgetCode').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+            const btn = document.querySelector('.copy-btn');
+            btn.innerText = 'Copié !';
+            setTimeout(() => btn.innerText = 'Copier le code', 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
